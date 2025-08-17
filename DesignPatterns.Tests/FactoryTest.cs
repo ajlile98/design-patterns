@@ -9,11 +9,14 @@ public class FactoryTest
     [Fact]
     public void TestFactory()
     {
-        Shape roundFood = factory.getFood("Round");
-        Shape cylFood = factory.getFood("Cylinder");
+        Shape? roundFood = factory.getFood("Round");
+        Shape? cylFood = factory.getFood("Cylinder");
 
-        Assert.Equal("Round", roundFood.GetShape());
-        Assert.Equal("Cylinder", cylFood.GetShape());
+        Assert.NotNull(roundFood);
+        Assert.NotNull(cylFood);
+
+        Assert.Equal("Round", roundFood!.GetShape());
+        Assert.Equal("Cylinder", cylFood!.GetShape());
         
     }
 }
