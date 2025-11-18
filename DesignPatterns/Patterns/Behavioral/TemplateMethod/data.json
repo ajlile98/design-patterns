@@ -1,0 +1,12 @@
+[
+  {
+    "Id": 1,
+    "Name": "Margot Robbie",
+    "City": "Sydney"
+  },
+  {
+    "Id": 2,
+    "Name": "Woody Harrelson",
+    "City": "Boston"
+  }
+]
